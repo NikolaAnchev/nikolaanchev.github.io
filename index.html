@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1 class="intro"">Честит 8-ми Март, мамо!</h1>
+  <h2> Честит празник, мамо!
+    Пожелаваме ти да си по-щастлива, по-спокойна,  по-здрава, по-смела, по-позитивна, по-усмихната 
+    с всеки изминал ден! Благодарим ти за всичко, което правиш за нас. Затова обещаваме да те радваме всеки ден!
+  </h2>
+
+  <h1 class="gallery">Спомени:</h1>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 6</div>
+  <img src="img1.jpg" style="width:100%">
+  <div class="text">17.7.2019</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 6</div>
+  <img src="img2.jpg" style="width:100%">
+  <div class="text">7.4.2019</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 6</div>
+  <img src="img3.jpg" style="width:100%">
+  <div class="text">22.09.2017</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 6</div>
+  <img src="img4.jpg" style="width:100%">
+  <div class="text">17.7.2019</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 6</div>
+  <img src="img5.jpg" style="width:100%">
+  <div class="text">25.09.2018</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 6</div>
+  <img src="img6.jpg" style="width:100%">
+  <div class="text">23.09.2017</div>
+</div>
+
+</div>
+<br>
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 4000); // Change image every 4 seconds
+}
+</script>
+
